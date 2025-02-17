@@ -15,7 +15,6 @@ public class Knap {
         if (weights[i] <= capacity) {
             addme = values[i] + knapsackr(values, weights, capacity - weights[i], n);
         }
-        System.out.println("values[0] "+ values[0]);
         return Math.max(addme, knapsackr(values, weights,capacity, n));
     }
 }
